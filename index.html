@@ -38,7 +38,7 @@
       max-width: 80%;
     }
 
-    /* ---------- HERO ---------- */
+    /* ---------- HERO IMAGE ---------- */
     .hero {
       flex: 1;
       display: flex;
@@ -48,20 +48,9 @@
       padding: 0 20px;
     }
 
-    .headline {
-      font-size: clamp(48px, 6vw, 68px);
-      line-height: 1.05;
-      letter-spacing: -1px;
-    }
-
-    .headline .light {
-      font-weight: 400;
-    }
-
-    .headline .bold-red {
-      font-weight: 800;
-      color: var(--red);
-      font-style: italic;
+    .hero-image {
+      width: min(1100px, 90vw);
+      height: auto;
     }
 
     /* ---------- FOOTER CONTACT ---------- */
@@ -101,6 +90,10 @@
       .logo {
         width: 140px;
       }
+
+      .hero-image {
+        width: 95vw;
+      }
     }
   </style>
 </head>
@@ -108,16 +101,13 @@
 <body>
   <!-- LOGO -->
   <div class="logo-wrap">
-    <!-- replace with your uploaded logo filename -->
     <img src="logo.png" alt="RH Facility" class="logo" />
   </div>
 
-  <!-- HERO TEXT -->
+  <!-- HERO IMAGE (your Supply Simplified graphic) -->
   <section class="hero">
-    <h1 class="headline">
-      <span class="light">Supply, </span>
-      <span class="bold-red">Simplified</span>
-    </h1>
+    <!-- 🔥 IMPORTANT: upload this image to repo -->
+    <img src="headline.png" alt="Supply Simplified" class="hero-image" />
   </section>
 
   <!-- FOOTER CONTACT -->
